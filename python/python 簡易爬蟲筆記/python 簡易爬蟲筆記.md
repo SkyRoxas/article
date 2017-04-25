@@ -1,7 +1,7 @@
 # python 簡易爬蟲筆記
 
 ## 目標 ：
-存取指定網頁的 element 的 value 為 json ， 並將其匯出成 json 檔案
+存取指定網頁的 element 的 value 為 json 
 
 ## Step 1 安裝套件：
 
