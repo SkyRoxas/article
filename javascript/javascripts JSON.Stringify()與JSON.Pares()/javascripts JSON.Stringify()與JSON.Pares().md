@@ -11,13 +11,48 @@ JSON 是個以純文字為基底去儲存和傳送簡單結構資料，你可以
 例如，對電腦來說，這是一個物件（Object）：
 
 ```
-{ "name": "James" }
+{ "name": "Roxas" }
 ```
 
 這個物件轉成字串：
 
 ```
-"{ \"name\": \"James\" }""
+"{ "name": "Roxas" }"
 ```
 
 對電腦來說，這才是字串。所以，將 JSON 物件（Object）轉成字串後，才能儲存或傳送。這個動作就叫 JSON Stringify（字串化）。當然，字串化過的 JSON 字串，要使用時，也要解析（Parse）回物件。
+
+### 實際範例 ：
+
+```
+var obj = { "name": "Roxas" };    // 一個物件
+var str = "{ \"name\": \"Roxas\" }";    // 一個字串
+```
+
+### JSON.Stringify() :
+
+#### Coding :
+
+```
+console.log(JSON.stringify(obj));
+```
+
+#### Return :
+
+```
+"{ "name": "Roxas" }"
+```
+
+### JSON.Pares() :
+
+#### Coding :
+
+```
+console.log(JSON.parse(str))
+```
+
+#### Return :
+
+```
+Object {name: "Roxas"}
+```
